@@ -1,35 +1,56 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Anton's tech page: Fedora Linux, security labs, Hack The Box, TryHackMe, and general terminal-shaped side quests."><meta name="theme-color" content="#080a0d">
-  <title>Terminal — Anton Maario</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/script.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Fedora Linux, cybersecurity learning and useful technical resources.">
+  <title>Tech | Anton Maario</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<header class="site-header"><div class="shell nav"><a class="brand" href="index.html"><span class="brand-mark">#</span><span>antonmaario</span></a><button class="menu-button" type="button" data-menu aria-expanded="false">menu</button><nav class="nav-links" data-nav-links><a href="index.html">home</a><a href="garage.html">garage</a><a href="training.html">training</a><a href="terminal.html" aria-current="page">terminal</a><a href="games.html">games</a></nav></div></header>
-<main id="main" class="shell">
-<section class="page-head"><div class="eyebrow">/dev/side-quests</div><h1>linux btw.</h1><p>Fedora lives on the laptop. I like tech, I occasionally poke at Hack The Box and TryHackMe, and I enjoy the very specific satisfaction of making a computer do something it initially refused to do.</p></section>
-<section class="two-col section"><div class="panel"><div class="eyebrow">// workstation mood</div><h2>Fedora, on purpose.</h2><pre class="codeblock"><span class="cmd">$</span> cat /etc/os-release
-NAME="Fedora Linux"
-
-<span class="cmd">$</span> echo $HOBBIES
-linux ctf troubleshooting breaking-things-fixing-them
-
-<span class="cmd">$</span> sudo dnf upgrade
-[sudo] password for anton: ********
-Nothing to do.
-Complete!</pre></div><div class="panel"><div class="eyebrow">// current rabbit holes</div><h2>Things worth losing an evening to</h2><div class="tag-row"><span class="tag green">Fedora</span><span class="tag">Linux</span><span class="tag blue">Hack The Box</span><span class="tag blue">TryHackMe</span><span class="tag">networking</span><span class="tag">security</span><span class="tag">shell scripting</span><span class="tag">homelab energy</span></div><p class="quote-box">The line between “learning” and “why did I reinstall my bootloader at 1:30 AM?” is thinner than advertised.</p></div></section>
-<section class="section"><div class="section-head"><div><div class="eyebrow">// ctf loop</div><h2>The scientific method,<br>but louder.</h2></div><p>I am not pretending to be a movie hacker. CTFs are mostly curiosity, enumeration, documentation, rabbit holes, and eventually realizing the clue was right there.</p></div><div class="timeline"><div class="timeline-item"><h3>01. Enumerate everything</h3><p>Ports, services, versions, files, weird behavior. Collect facts before writing fan fiction about the exploit chain.</p></div><div class="timeline-item"><h3>02. Form a theory</h3><p>Pick the suspicious thing and test it. Accept that the suspicious thing may be completely innocent.</p></div><div class="timeline-item"><h3>03. Read documentation</h3><p>The forbidden technique. Extremely effective.</p></div><div class="timeline-item"><h3>04. Get flag / get humbled</h3><p>Both count as learning. Only one produces dopamine immediately.</p></div></div></section>
-<section class="section"><div class="panel"><div class="eyebrow">// rule zero</div><h2>Keep the security stuff legal.</h2><p>Labs, CTF platforms, systems I own, or systems I have explicit permission to test. Breaking into random things is not a personality trait.</p></div></section>
-  <section class="section">
-    <div class="cta-row">
-          <a class="button primary" href="garage.html">garage →</a>
-          <a class="button primary" href="training.html">training →</a>
-          <a class="button primary" href="games.html">games →</a>
-        </div>
-      </div>
-  </section>
-</main>
-<footer class="site-footer"><div class="shell footer-row"><div>© <span data-year></span> Anton Maario · exit code 0, probably.</div><div><a href="https://www.instagram.com/antonmaario/" target="_blank" rel="me noopener">instagram</a> · <a href="https://steamcommunity.com/id/antonmaario/" target="_blank" rel="me noopener">steam</a></div></div></footer>
-<div class="easter" data-easter><div class="easter-inner"><div class="eyebrow">secret diagnostic</div><div class="big">BOXER<br>NOISES</div><p class="lede">You typed BRZ. The website approves.</p><button type="button" data-close-easter>close</button></div></div>
-</body></html>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="site-name" href="index.html">Anton Maario</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="garage.html">Garage</a>
+        <a href="training.html">Training</a>
+        <a href="terminal.html" aria-current="page">Tech</a>
+        <a href="games.html">Games</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap" id="main" tabindex="-1">
+    <h1>Linux &amp; tech</h1>
+    <p class="intro">I use Fedora on my laptop and enjoy learning how systems work. My interests include Linux, networking, shell scripting and cybersecurity. Sometimes the troubleshooting is the hobby.</p>
+    <section>
+      <h2>Linux</h2>
+      <p>Fedora is my distribution of choice. I like learning through everyday use, troubleshooting and reading documentation. Occasionally in that order, which explains a lot.</p>
+      <p>Two simple commands I find useful:</p>
+      <pre><code>cat /etc/os-release
+sudo dnf upgrade</code></pre>
+      <p>The first shows distribution information; the second checks for and applies package updates after confirmation. Very glamorous stuff.</p>
+    </section>
+    <section>
+      <h2>Security labs</h2>
+      <p>I occasionally use capture-the-flag (CTF) challenges to practise problem-solving. I try to understand the problem, keep notes, consult documentation and learn from mistakes. The last step offers an exceptionally generous learning opportunity.</p>
+      <p>I only practise on authorized labs, systems I own, or systems I have explicit permission to test.</p>
+    </section>
+    <section>
+      <h2>Useful resources</h2>
+      <ul class="directory compact">
+        <li><h3><a href="https://docs.fedoraproject.org/">Fedora documentation</a></h3><p>Installation, configuration and troubleshooting.</p></li>
+        <li><h3><a href="https://www.hackthebox.com/">Hack The Box</a></h3><p>Hands-on cybersecurity learning and challenges.</p></li>
+        <li><h3><a href="https://tryhackme.com/">TryHackMe</a></h3><p>Guided security labs and learning paths.</p></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© Anton Maario</span>
+      <span><a href="https://www.instagram.com/antonmaario/" rel="me">Instagram</a> · <a href="https://steamcommunity.com/id/antonmaario/" rel="me">Steam</a></span>
+    </div>
+  </footer>
+</body>
+</html>

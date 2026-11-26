@@ -1,1 +1,30 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>404 — Anton Maario</title><link rel="stylesheet" href="assets/style.css"></head><body><main class="shell"><section class="page-head"><div class="eyebrow">error 404</div><h1>skill issue.</h1><p>This page either moved, never existed, or lost the clutch.</p><a class="button primary" href="index.html">return home →</a></section></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Page not found | Anton Maario</title>
+  <!-- Inline styles because a 404 can be served at any URL depth. -->
+  <style>
+    :root { color-scheme: light dark; }
+    body { max-width: 42rem; margin: 4rem auto; padding: 0 1rem; font: 1rem/1.7 system-ui,sans-serif; }
+    h1 { line-height: 1.2; } a { text-underline-offset: .18em; }
+    a:focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>404 — Page not found</h1>
+    <p>The page may have moved, or the address may be incorrect. Either way, we have successfully found nothing.</p>
+    <p><a href="/" id="home">Return to the homepage</a></p>
+    <p>If you're using the GitHub Pages project address, <a href="https://antonmaario.github.io/mywebsite/">open the project homepage</a>.</p>
+  </main>
+  <script>
+    // Adjust the home link on the repository's GitHub Pages project URL.
+    if (location.hostname === 'antonmaario.github.io') {
+      document.getElementById('home').href = '/mywebsite/';
+    }
+  </script>
+</body>
+</html>

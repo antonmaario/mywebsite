@@ -3,107 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Anton Maario's corner of the internet: cars, lifting, Linux, CTFs, games, and assorted side quests.">
-  <meta name="theme-color" content="#080a0d">
-  <title>Anton Maario — assorted side quests</title>
+  <meta name="description" content="Personal website about cars, strength training, Linux, security and gaming.">
+  <title>Anton Maario</title>
   <link rel="stylesheet" href="assets/style.css">
-  <script defer src="assets/script.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="shell nav">
-      <a class="brand" href="index.html"><span class="brand-mark">#</span><span>antonmaario</span></a>
-      <button class="menu-button" type="button" data-menu aria-expanded="false" aria-label="Toggle navigation">menu</button>
-      <nav class="nav-links" data-nav-links aria-label="Main navigation">
-        <a href="index.html" aria-current="page">home</a>
-        <a href="garage.html">garage</a>
-        <a href="training.html">training</a>
-        <a href="terminal.html">terminal</a>
-        <a href="games.html">games</a>
+    <div class="wrap header-inner">
+      <a class="site-name" href="index.html">Anton Maario</a>
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="garage.html">Garage</a>
+        <a href="training.html">Training</a>
+        <a href="terminal.html">Tech</a>
+        <a href="games.html">Games</a>
       </nav>
     </div>
   </header>
+  <main class="wrap" id="main" tabindex="-1">
+    <h1>Hi, I'm Anton.</h1>
+    <p class="intro">I like cars, strength training, Linux, cybersecurity and Counter-Strike. This is a small personal website about those interests.</p>
+    <p>Nothing particularly formal here. I needed somewhere to put my interests, and apparently having four unrelated hobbies was not enough of a time commitment.</p>
 
-  <main id="main" class="shell">
-    <section class="hero">
-      <div>
-        <div class="eyebrow">// personal website · no clear objective</div>
-        <h1>side quests<br><span class="soft">welcome.</span></h1>
-        <p class="lede">I'm Anton. Somewhere between a stock flat-four, a barbell, a Fedora terminal, a CTF box, and one more Counter-Strike queue.</p>
-        <div class="cta-row">
-          <a class="button primary" href="garage.html">enter the rabbit hole →</a>
-          <a class="button" href="https://www.instagram.com/antonmaario/" target="_blank" rel="me noopener">Instagram ↗</a>
-          <a class="button" href="https://steamcommunity.com/id/antonmaario/" target="_blank" rel="me noopener">Steam ↗</a>
-        </div>
-      </div>
-
-      <aside class="hero-terminal" aria-label="Fake terminal summary">
-        <div class="terminal-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
-        <div class="terminal-body">
-          <div><span class="prompt">guest@antonmaario</span>:<span class="dim">~</span>$ ./whoami</div>
-          <br>
-          <div><span class="ok">[OK]</span> human</div>
-          <div><span class="ok">[OK]</span> 2017 BRZ owner</div>
-          <div><span class="ok">[OK]</span> evidence-based lifting enjoyer</div>
-          <div><span class="ok">[OK]</span> Fedora laptop user btw</div>
-          <div><span class="ok">[OK]</span> occasional CTF victim</div>
-          <div><span class="ok">[OK]</span> 2600+ CS hours</div>
-          <br>
-          <div><span class="prompt">system</span>: <span data-random-status>loading questionable life choices...</span></div>
-          <br>
-          <div><span class="prompt">guest@antonmaario</span>:<span class="dim">~</span>$ <span class="cursor" aria-hidden="true"></span></div>
-        </div>
-      </aside>
+    <section aria-labelledby="interests">
+      <h2 id="interests">What you'll find here</h2>
+      <ul class="directory">
+        <li><h3><a href="garage.html">Garage</a></h3><p>My stock 2017 Subaru BRZ. All the handling, some of the horsepower.</p></li>
+        <li><h3><a href="training.html">Training</a></h3><p>Picking things up, putting them down, and keeping surprisingly detailed records of it.</p></li>
+        <li><h3><a href="terminal.html">Tech</a></h3><p>Fedora Linux, security labs, and occasionally creating the problems I then have to solve.</p></li>
+        <li><h3><a href="games.html">Games</a></h3><p>Counter-Strike, 2,700+ hours, and the ongoing investigation into where my aim went.</p></li>
+      </ul>
     </section>
-
-    <section class="status-strip" aria-label="Current build">
-      <div class="stat"><strong>2017 BRZ</strong><span>stock. yes, actually.</span></div>
-      <div class="stat"><strong>science-ish</strong><span>lifting with spreadsheets in spirit</span></div>
-      <div class="stat"><strong>Fedora</strong><span>because “btw” needed a distro</span></div>
-      <div class="stat"><strong>CTFs</strong><span>Hack The Box + TryHackMe sometimes</span></div>
-      <div class="stat"><strong>2600+ hrs</strong><span>Counter-Strike. no further questions.</span></div>
+    <section aria-labelledby="elsewhere">
+      <h2 id="elsewhere">Find me elsewhere</h2>
+      <p><a href="https://www.instagram.com/antonmaario/" rel="me">Instagram</a> · <a href="https://steamcommunity.com/id/antonmaario/" rel="me">Steam</a></p>
     </section>
-
-    <section class="section">
-      <div class="section-head">
-        <div><div class="eyebrow">// choose your fighter</div><h2>Things I will talk about<br>without being asked.</h2></div>
-        <p>This is intentionally not a portfolio, blog, newsletter, startup funnel, or personal-brand content machine. It is a website. Imagine that.</p>
-      </div>
-      <div class="card-grid">
-        <a class="card" href="garage.html" data-ghost="86"><div class="kicker">01 · garage</div><h3>The BRZ</h3><p>A stock 2017 Subaru BRZ and the ongoing discipline of not turning every paycheck into suspension parts.</p><span class="arrow">↗</span></a>
-        <a class="card" href="training.html" data-ghost="RPE"><div class="kicker">02 · training</div><h3>Lift, but cite sources</h3><p>Hypertrophy, progressive overload, reasonable volume, and the occasional Dr. Mike lecture playing in the background.</p><span class="arrow">↗</span></a>
-        <a class="card" href="terminal.html" data-ghost="sudo"><div class="kicker">03 · terminal</div><h3>Linux & security rabbit holes</h3><p>Fedora on the laptop, CTFs when curiosity wins, and enough tech tinkering to create problems that did not exist before.</p><span class="arrow">↗</span></a>
-        <a class="card" href="games.html" data-ghost="GG"><div class="kicker">04 · games</div><h3>Queue again?</h3><p>Counter-Strike has consumed 2600+ hours. This could be called dedication, sunk cost, or both.</p><span class="arrow">↗</span></a>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="two-col">
-        <div class="panel">
-          <div class="eyebrow">// website philosophy</div>
-          <h2>Set it. Forget it.</h2>
-          <p>No database. No login. No analytics dependency. No framework update treadmill. Just static HTML, CSS, and a tiny bit of JavaScript that GitHub Pages can serve forever-ish.</p>
-        </div>
-        <div class="panel">
-          <div class="eyebrow">// lore</div>
-          <h2>Why does this exist?</h2>
-          <p>Because personal websites were more fun when they were allowed to be personal. Also because owning a domain and not putting weird little pages on it feels wasteful.</p>
-          <div class="quote-box">“professional web presence” has been postponed indefinitely.</div>
-        </div>
-      </div>
+    <section aria-labelledby="about-site">
+      <h2 id="about-site">About this site</h2>
+      <p>Built with plain HTML and CSS, hosted on GitHub Pages. No accounts, trackers, or unnecessary dependencies. A website that does not require 400 MB of JavaScript to tell you I like cars. Radical, I know.</p>
     </section>
   </main>
-
   <footer class="site-footer">
-    <div class="shell footer-row">
-      <div>© <span data-year></span> Anton Maario · built with plain files and avoidable opinions.</div>
-      <div><a href="https://www.instagram.com/antonmaario/" target="_blank" rel="me noopener">instagram</a> · <a href="https://steamcommunity.com/id/antonmaario/" target="_blank" rel="me noopener">steam</a></div>
+    <div class="wrap footer-inner">
+      <span>© Anton Maario</span>
+      <span><a href="https://www.instagram.com/antonmaario/" rel="me">Instagram</a> · <a href="https://steamcommunity.com/id/antonmaario/" rel="me">Steam</a></span>
     </div>
   </footer>
-
-  <div class="easter" data-easter aria-hidden="true">
-    <div class="easter-inner"><div class="eyebrow">secret diagnostic</div><div class="big">BOXER<br>NOISES</div><p class="lede">You typed BRZ. The website approves.</p><button type="button" data-close-easter>close before something breaks</button></div>
-  </div>
 </body>
 </html>
